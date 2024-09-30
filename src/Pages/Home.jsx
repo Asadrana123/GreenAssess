@@ -3,14 +3,35 @@ import sectionImage from "../assets/hero-image.jpg"
 import { useEffect } from "react";
 import { useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 function Home() {
-    const heroRef = useRef(null);
-    // useEffect(() => {
-    //     gsap.fromTo(heroRef.current,
-    //         { y: -100, opacity: 0 },
-    //         { y: 0, opacity: 1, ease: 'bounce.out', duration: 1 }
-    //     );
-    // }, []);
+    const aboutRef = useRef(null);
+    const visionRef = useRef(null);
+    const servicesRef = useRef(null);
+    const contactRef = useRef(null);
+    useEffect(() => {
+        const sections = [aboutRef.current, visionRef.current, servicesRef.current, contactRef.current];
+    
+        sections.forEach((section) => {
+          gsap.fromTo(
+            section,
+            { y: 100, opacity: 0 },
+            {
+              y: 0,
+              opacity: 1,
+              ease: "bounce.out",
+              duration: 1.5,
+              scrollTrigger: {
+                trigger: section,
+                start: "top 80%", 
+                end: "bottom 60%", 
+                toggleActions: "play none none none", 
+              },
+            }
+          );
+        });
+      }, []);
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -82,7 +103,7 @@ function Home() {
             </header>
 
             <main>
-                <section id="hero" className="hero-section bounce" ref={heroRef}>
+                <section id="hero" className="hero-section bounce">
                     <div className="hero-container">
                         <h2 className="hero-title">Revolutionizing Green Property Assessment</h2>
                         <p className="hero-subtitle">
@@ -102,7 +123,7 @@ function Home() {
                     <img src={sectionImage} />
                 </section>
 
-                <section id="about" className="about-section">
+                <section id="about" className="about-section" ref={aboutRef}>
                     <div className="content-container">
                         <h2 className="section-title">About Us</h2>
                         <p className="section-description">
@@ -119,7 +140,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section id="vision" className="vision-section">
+                <section id="vision" className="vision-section" ref={visionRef}>
                     <div className="content-container">
                         <h2 className="section-title">Our Vision</h2>
                         <p className="section-description">
@@ -134,7 +155,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section id="services" className="services-section">
+                <section id="services" className="services-section" ref={servicesRef}>
                     <div className="content-container">
                         <h2 className="section-title">Our Services</h2>
                         <div className="services-grid">
@@ -163,7 +184,7 @@ function Home() {
                     </div>
                 </section>
 
-                <section id="contact" className="contact-section">
+                <section id="contact" className="contact-section" ref={contactRef}>
                     <div className="content-container text-center">
                         <h2 className="section-title">Ready to Get Started?</h2>
                         <p className="section-description">
