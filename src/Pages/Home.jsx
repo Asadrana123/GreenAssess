@@ -5,12 +5,12 @@ import { useRef } from "react";
 import gsap from "gsap";
 function Home() {
     const heroRef = useRef(null);
-    useEffect(() => {
-        gsap.fromTo(heroRef.current,
-            { y: -100, opacity: 0 },
-            { y: 0, opacity: 1, ease: 'bounce.out', duration: 1 }
-        );
-    }, []);
+    // useEffect(() => {
+    //     gsap.fromTo(heroRef.current,
+    //         { y: -100, opacity: 0 },
+    //         { y: 0, opacity: 1, ease: 'bounce.out', duration: 1 }
+    //     );
+    // }, []);
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -82,7 +82,7 @@ function Home() {
             </header>
 
             <main>
-                <section id="hero" className="hero-section" ref={heroRef}>
+                <section id="hero" className="hero-section bounce" ref={heroRef}>
                     <div className="hero-container">
                         <h2 className="hero-title">Revolutionizing Green Property Assessment</h2>
                         <p className="hero-subtitle">
