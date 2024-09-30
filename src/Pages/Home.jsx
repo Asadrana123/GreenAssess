@@ -7,7 +7,7 @@ function Home() {
     const heroRef = useRef(null);
     useEffect(() => {
         gsap.fromTo(heroRef.current,
-            { y: 100, opacity: 0 },
+            { y: -100, opacity: 0 },
             { y: 0, opacity: 1, ease: 'bounce.out', duration: 1.5 }
         );
     }, []);
