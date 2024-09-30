@@ -125,7 +125,7 @@
 }
 
 .bounce {
-    animation: bounceIn 1,5s ease-in-out;
+    animation: bounceIn 1.5s ease-in-out;
 }
 
 @keyframes bounceIn {
