@@ -5,12 +5,10 @@ import { useRef } from "react";
 import gsap from "gsap";
 function Home() {
     const heroRef = useRef(null);
-    useEffect(() => {
-        gsap.fromTo(heroRef.current,
-            { y: -100, opacity: 0 },
-            { y: 0, opacity: 1, ease: 'bounce.out', duration: 1.5 }
-        );
-    }, []);
+    gsap.fromTo(heroRef.current,
+        { y: -100, opacity: 0 },
+        { y: 0, opacity: 1, ease: 'bounce.out', duration: 1.5 }
+    );
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
