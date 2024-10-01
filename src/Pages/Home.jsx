@@ -151,7 +151,7 @@ function Home() {
                         </p>
                     </div>
                 </section>
-
+                  <div className="horizontal-line"></div>
                 <section id="vision" className="vision-section" ref={visionRef}>
                     <div className="content-container">
                         <h2 className="section-title">Our Vision</h2>
@@ -167,7 +167,7 @@ function Home() {
                     </div>
                     <img className="image-2" src={image2} />
                 </section>
-
+                <div className="horizontal-line"></div>
                 <section id="services" className="services-section" ref={servicesRef}>
                     <div className="content-container">
                         <h2 className="section-title">Our Services</h2>
@@ -195,8 +195,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-
                 </section>
+                <div className="horizontal-line"></div>
                 <section id="contact" className="contact-section" ref={contactRef}>
                     <div className="content-container text-center">
                         <h2 className="section-title">Ready to Get Started?</h2>
