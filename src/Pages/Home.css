@@ -159,6 +159,8 @@
 
 .services-grid div {
     width: 24%;
+    background: hsl(246deg 40% 96%);
+    border-radius: 10px;
 }
 
 .bounce {
