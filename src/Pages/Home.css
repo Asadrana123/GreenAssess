@@ -239,3 +239,10 @@
     padding: 1rem 0;
     text-align: center;
 }
+
+.image-2 {
+    width: 50%;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import image2 from "../assets/image-2.jpg"
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
     const aboutRef = useRef(null);
@@ -153,6 +154,7 @@ function Home() {
                             positive change in the real estate sector.
                         </p>
                     </div>
+                    <img className="image-2" src={image2} />
                 </section>
 
                 <section id="services" className="services-section" ref={servicesRef}>
@@ -182,8 +184,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
 
+                </section>
                 <section id="contact" className="contact-section" ref={contactRef}>
                     <div className="content-container text-center">
                         <h2 className="section-title">Ready to Get Started?</h2>
