@@ -132,7 +132,7 @@ function Home() {
                         muted
                         loop
                     >
-                        <source src="/assets/video@720p.mp4" type="video/mp4" 
+                        <source src="https://static-assets.mapbox.com/www/videos/home/section_beautiful-maps/video@720p.mp4" type="video/mp4" 
                         />
                         Your browser does not support the video tag.
                     </video>
