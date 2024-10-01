@@ -12,26 +12,26 @@ function Home() {
     const contactRef = useRef(null);
     useEffect(() => {
         const sections = [aboutRef.current, visionRef.current, servicesRef.current, contactRef.current];
-    
+
         sections.forEach((section) => {
-          gsap.fromTo(
-            section,
-            { y: 100, opacity: 0 },
-            {
-              y: 0,
-              opacity: 1,
-              ease: "bounce.out",
-              duration: 1.5,
-              scrollTrigger: {
-                trigger: section,
-                start: "top 80%", 
-                end: "bottom 60%", 
-                toggleActions: "play none none none", 
-              },
-            }
-          );
+            gsap.fromTo(
+                section,
+                { y: 100, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    ease: "bounce.out",
+                    duration: 1.5,
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 80%",
+                        end: "bottom 60%",
+                        toggleActions: "play none none none",
+                    },
+                }
+            );
         });
-      }, []);
+    }, []);
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -109,16 +109,18 @@ function Home() {
                         <p className="hero-subtitle">
                             Harnessing AI and IoT for accurate, real-time environmental impact data
                         </p>
-                        <a
+                        <button
+                            className="pushable"
                             href="#contact"
-                            className="hero-button"
                             onClick={(e) => {
                                 e.preventDefault();
                                 scrollToSection("contact");
                             }}
                         >
-                            Get Started
-                        </a>
+                            <span className="front">
+                                Get Started
+                            </span>
+                        </button>
                     </div>
                     <img src={sectionImage} />
                 </section>
@@ -191,13 +193,21 @@ function Home() {
                             Contact us today to learn how GreenAssess AI can revolutionize your property
                             assessments and financing options.
                         </p>
-                        <a href="mailto:info@greenassessai.com" className="contact-button">
-                            Contact Us
-                        </a>
+                        <button
+                            className="pushable"
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection("contact");
+                            }}
+                        >
+                            <span className="front">
+                                Contact us
+                            </span>
+                        </button>
                     </div>
                 </section>
             </main>
-
             <footer className="footer">
                 <div className="footer-container">
                     <p>&copy; 2024 GreenAssess AI. All rights reserved.</p>

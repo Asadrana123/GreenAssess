@@ -5,7 +5,7 @@
 
 /* Header Styles */
 .header {
-    background: linear-gradient(0deg, #ecf0fc, #f9fafc, #f6e8f5);
+    background: linear-gradient(to bottom, hsl(200, 60%, 95%) 0%, hsl(0, 0%, 100%) 100%);
     box-shadow: 0 4px 4px #00000005;
 }
 
@@ -14,12 +14,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2.5rem;
 }
 
 .logo {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
+    color: #422afb;
 }
 
 .nav-list {
@@ -32,6 +33,10 @@
     text-decoration: none;
     transition: color 0.3s;
     color: black;
+}
+
+.nav-item:hover {
+    color: #422afb;
 }
 
 /* .nav-item:hover {
@@ -79,10 +84,36 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .hero-button:hover {
     transform: scale(1.1);
+}
+
+.pushable {
+    background: hsl(246deg 97% 45%);
+    border: none;
+    border-radius: 9999px;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    font-weight: 600;
+}
+
+.front {
+    display: block;
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+    background: hsl(246deg 97% 58%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
 }
 
 .about-section {
@@ -98,8 +129,7 @@
 
 .section-title {
     font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -110,12 +140,12 @@
 
 /* Vision Section */
 .vision-section {
-    padding: 4rem 0;
+    margin-top: 150px;
 }
 
 /* Services Section */
 .services-section {
-    padding: 4rem 0;
+    margin-top: 150px;
 }
 
 .services-grid {
@@ -173,7 +203,7 @@
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 0;
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -186,6 +216,8 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .contact-button:hover {
