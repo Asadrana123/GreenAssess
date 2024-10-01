@@ -138,7 +138,9 @@
 
 .section-description {
     font-size: 1.125rem;
+    margin: 0 auto;
     margin-bottom: 2rem;
+    width: 65%;
 }
 
 /* Vision Section */
