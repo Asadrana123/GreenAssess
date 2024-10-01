@@ -170,6 +170,21 @@
     animation: bounceIn 1.5s ease-in-out;
 }
 
+.map-video-container {
+    width: 60%;
+    max-height: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.map-video {
+    width: 101%;
+    border-radius: 10px;
+}
+
 @keyframes bounceIn {
     0% {
         transform: translateY(-100px);

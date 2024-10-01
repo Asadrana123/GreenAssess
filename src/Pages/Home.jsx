@@ -125,7 +125,18 @@ function Home() {
                     </div>
                     <img src={sectionImage} />
                 </section>
-
+                <section className="map-video-container">
+                    <video
+                        className="map-video"
+                        autoPlay
+                        muted
+                        loop
+                    >
+                        <source src="/assets/video@720p.mp4" type="video/mp4" 
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
                 <section id="about" className="about-section" ref={aboutRef}>
                     <div className="content-container">
                         <h2 className="section-title">About Us</h2>
