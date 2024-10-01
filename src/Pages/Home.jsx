@@ -107,7 +107,7 @@ function Home() {
                     <div className="hero-container">
                         <h2 className="hero-title">Revolutionizing Green Property Assessment</h2>
                         <p className="hero-subtitle">
-                            Harnessing AI and IoT for accurate, real-time environmental impact data
+                            We improve understanding of how climate change impacts financial performance and investment decisions
                         </p>
                         <button
                             className="pushable"
@@ -129,10 +129,8 @@ function Home() {
                     <div className="content-container">
                         <h2 className="section-title">About Us</h2>
                         <p className="section-description">
-                            At GreenAssess AI, we're tackling the challenge of accurately assessing the
-                            "greenness" of properties in urban environments. Our innovative approach
-                            combines cutting-edge AI and IoT technologies to provide financial institutions
-                            with precise, up-to-date environmental impact data from properties.
+                            Companies need to meet goals while balancing Cost, CO&#8322;, Energy, Returns, and Policy requirements.
+                            We use AI to empower their decision-making process.
                         </p>
                         <p className="section-description">
                             Our solution is revolutionizing TCFD reporting and enabling dynamic

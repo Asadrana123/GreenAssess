@@ -5,7 +5,7 @@
 
 /* Header Styles */
 .header {
-    background: linear-gradient(to bottom, hsl(200, 60%, 95%) 0%, hsl(0, 0%, 100%) 100%);
+    /* background: linear-gradient(to bottom, hsl(200, 60%, 95%) 0%, hsl(0, 0%, 100%) 100%); */
     box-shadow: 0 4px 4px #00000005;
 }
 
@@ -66,8 +66,11 @@
 
 .hero-title {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #226bff, #4aaeff);
+    color: #0000;
 }
 
 .hero-subtitle {
@@ -135,7 +138,7 @@
 
 .section-description {
     font-size: 1.125rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 /* Vision Section */
@@ -149,9 +152,13 @@
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
     gap: 2rem;
+}
+
+.services-grid div {
+    width: 24%;
 }
 
 .bounce {
@@ -193,8 +200,9 @@
 
 .service-title {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem;
+    min-height: 50px;
 }
 
 .service-description {
