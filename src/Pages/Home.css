@@ -28,7 +28,9 @@
 .logo {
     font-size: 2rem;
     font-weight: 500;
-    color: #422afb;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #28a745, #218838);
+    color: transparent;
 }
 
 .nav-list {
@@ -40,12 +42,12 @@
 .nav-item {
     text-decoration: none;
     transition: color 0.3s;
-    color: black;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #28a745, #218838);
+    color: transparent;
+    font-size: 18px;
 }
 
-.nav-item:hover {
-    color: #422afb;
-}
 
 /* .nav-item:hover {
     color: #bbf7d0;
@@ -112,9 +114,11 @@
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
-.display-numbers-container h2{
+
+.display-numbers-container h2 {
     font-size: 25px;
 }
+
 .display-numbers {
     display: flex;
     justify-content: center;

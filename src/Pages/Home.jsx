@@ -124,7 +124,7 @@ function Home() {
                         </button>
                     </div>
                     <div className="display-numbers-container">
-                          <h2>Globally,cities are suffering</h2>
+                          <h2>Cities are suffering</h2>
                         <div className="display-numbers">
                             <div><span>LAND AREA</span><span>2%</span></div>
                             <div><span>ENERGY</span><span>60-80%</span></div>
