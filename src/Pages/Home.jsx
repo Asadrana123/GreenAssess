@@ -123,12 +123,15 @@ function Home() {
                             </span>
                         </button>
                     </div>
-                    <div className="display-numbers">
-                        <div><span>LAND AREA</span><span>2%</span></div>
-                        <div><span>ENERGY</span><span>60-80%</span></div>
-                        <div><span>EMISSION</span><span>75%</span></div>
-                        <div><span>URABN HEAT</span><span>+7F</span></div>
-                        <div><span>DEATH</span><span>4.2 million</span></div>
+                    <div className="display-numbers-container">
+                          <h2>Globally,cities are suffering</h2>
+                        <div className="display-numbers">
+                            <div><span>LAND AREA</span><span>2%</span></div>
+                            <div><span>ENERGY</span><span>60-80%</span></div>
+                            <div><span>EMISSION</span><span>75%</span></div>
+                            <div><span>URABN HEAT</span><span>+7F</span></div>
+                            <div><span>DEATH</span><span>4.2 million</span></div>
+                        </div>
                     </div>
                 </section>
                 <section className="map-video-container">
