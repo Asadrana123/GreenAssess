@@ -84,6 +84,7 @@
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    max-width: 85%;
 }
 
 .hero-button {
