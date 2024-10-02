@@ -3,14 +3,6 @@
   text-align: center;
   background-color: white;
   color: black;
-  background: linear-gradient(
-  to right, 
-  rgba(255, 255, 255, 1) 0%,       /* White at the top */
-  rgba(224, 236, 255, 1) 20%,      /* Light blue */
-  rgba(208, 226, 255, 1) 40%,      /* Slightly darker blue */
-  rgba(200, 220, 255, 1) 60%,      /* Soft blue in the middle */
-  rgba(188, 215, 255, 1) 80%,      /* More prominent blue */
-  rgba(179, 210, 255, 1) 100%      /* Deepest shade at the bottom */
-);
+  background: linear-gradient(to right, #ecf0fc, #f9fafc, #f6e8f5);
 }
 

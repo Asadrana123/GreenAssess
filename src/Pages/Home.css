@@ -56,8 +56,8 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 5%;
-    margin-top: 100px;
+    gap: 3%;
+    margin-top: 60px;
 }
 
 .hero-section img {
@@ -101,6 +101,30 @@
 
 .hero-button:hover {
     transform: scale(1.1);
+}
+
+.display-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.display-numbers div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.display-numbers div span {
+    font-weight: 600;
+    font-size: 18px;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.display-numbers div span:nth-child(2) {
+    color: #176e8a;
 }
 
 .pushable {

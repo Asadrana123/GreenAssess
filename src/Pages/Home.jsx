@@ -123,7 +123,13 @@ function Home() {
                             </span>
                         </button>
                     </div>
-                    <img src={sectionImage} />
+                    <div className="display-numbers">
+                        <div><span>LAND AREA</span><span>2%</span></div>
+                        <div><span>ENERGY</span><span>60-80%</span></div>
+                        <div><span>EMISSION</span><span>75%</span></div>
+                        <div><span>URABN HEAT</span><span>+7F</span></div>
+                        <div><span>DEATH</span><span>4.2 million</span></div>
+                    </div>
                 </section>
                 <section className="map-video-container">
                     <video
@@ -132,7 +138,7 @@ function Home() {
                         muted
                         loop
                     >
-                        <source src="https://static-assets.mapbox.com/www/videos/home/section_beautiful-maps/video@720p.mp4" type="video/mp4" 
+                        <source src="https://static-assets.mapbox.com/www/videos/home/section_beautiful-maps/video@720p.mp4" type="video/mp4"
                         />
                         Your browser does not support the video tag.
                     </video>
@@ -151,7 +157,7 @@ function Home() {
                         </p>
                     </div>
                 </section>
-                  <div className="horizontal-line"></div>
+                <div className="horizontal-line"></div>
                 <section id="vision" className="vision-section" ref={visionRef}>
                     <div className="content-container">
                         <h2 className="section-title">Our Vision</h2>
